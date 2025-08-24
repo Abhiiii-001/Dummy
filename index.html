@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="/assests//favicon.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>JTGeats</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <div class="header_container">
+        <header class="header content">
+          <!-- Logo -->
+          <div class="logo_container">
+            <a href="/" id="logo_text">JTGeats</a>
+          </div>
+
+          <!-- nav links -->
+          <nav class="nav_container">
+            <div class="nav_list">
+              <a href="/" class="nav_link">Home</a>
+              <a href="/" class="nav_link">About</a>
+              <a href="/" class="nav_link">Menu</a>
+              <a href="/" class="nav_link">Blog</a>
+              <a href="/" class="nav_link">Contact</a>
+            </div>
+          </nav>
+
+          <!-- search and cart -->
+          <div class="header_icons_container">
+            <i class="fa-solid fa-magnifying-glass header_icons"></i>
+            <div id="header_cart_container">
+              <i class="fa-solid fa-bag-shopping header_icons"></i>
+              <div id="cart_flag"></div>
+            </div>
+            <div class="mobile_menu_btn">
+               <nav class="mobile_nav_container">
+                <div class="mobile_nav_list">
+                  <a href="/" >Home</a>
+                  <a href="/" >About</a>
+                  <a href="/" >Menu</a>
+                  <a href="/" >Blog</a>
+                  <a href="/" >Contact</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <!-- Hero section -->
+      <section class="hero_section_container">
+        <div id="hero_section" class="content">
+          <div id="hero_section_left_container">
+            <h1 id="hero_section_title">Authentic Home food in India</h1>
+            <p id="hero_section_desc">
+              JTGeats is a courier service in which authentic home cook food is
+              delivered to a customer.
+            </p>
+            <div id="hero_section_searchbar">
+              <input
+                type="text"
+                placeholder="Search food you love"
+                id="hero_section_input"
+                class="input"
+              />
+              <div id="hero_section_search_btn">Search</div>
+            </div>
+          </div>
+          <div id="hero_section_right_container">
+            <img
+              src="/assests/hero-section.svg"
+              alt="hero-section-image"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Home Kitchen -->
+      <section class="home_kitchen_container">
+        <div id="home_kitchen" class="content">
+          <h2 class="section_heading">Home Kitchen</h2>
+
+          <div id="home_kitchen_menu">
+             <!-- Insert food card from js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular Items -->
+      <section class="popular_items_container">
+        <div class="popular_items content">
+          <h2 class="section_heading popular_items_heading">Popular Items</h2>
+
+          <!-- Popular Items content -->
+          <div class="popular_items_content_container">
+            <div class="popular_items_next_btn swiper_navigation_btn">
+              <i class="fa-solid fa-caret-left swiper_icons"></i>
+            </div>
+
+            <div class="swiper popular_items_swiper">
+              <div class="swiper-wrapper" id="popular_items_swiper_wrapper">
+                <!--Add products form js -->
+              </div>
+            </div>
+
+            <div class="popular_items_prev_btn swiper_navigation_btn">
+              <i class="fa-solid fa-caret-right swiper_icons"></i>
+            </div>
+          </div>
+
+          <!-- Popular items btn -->
+          <div id="request_dish_btn_container">
+            <div id="request_dish_btn" class="primary_btn">Request a Dish</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service section -->
+      <section class="service_container1">
+        <div class="content service_content_container">
+          <h2 class="service_heading">
+            <p>We are providing best</p>
+            <p>home cooked food delivery service.</p>
+          </h2>
+          <p class="service_desc">
+            Away from home and craving the tasty homemade recipes? Choose from a
+            selection of our delicious home cooked dishes
+          </p>
+        </div>
+      </section>
+      <section class="service_container2">
+        <div class="content service_video_container">
+          <video id="service_video" autoplay muted>
+            <source src="/assests/service-clip.mp4" type="video/mp4" />
+            Your Browser doesn't support video
+          </video>
+          <div id="service_video_play_btn">
+            <i class="fa-solid fa-caret-right"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact us -->
+      <section class="contact_us_container">
+        <div class="content contact_us_content_container">
+          <!-- Contact us form -->
+          <div class="contact_us_left_box">
+            <h3 class="contact_us_heding">
+              <p>Do you have a question</p>
+              <p>or want to become a seller?</p>
+            </h3>
+            <p class="contact_us_desc">
+              Fill this form and our manager will contact you next 48 hours.
+            </p>
+            <form class="contact_us_form">
+              <div class="name_email_div">
+                <input
+                  name="name"
+                  type="text"
+                  placeholder="Your name"
+                  id="contact_name"
+                  class="input_field"
+                  required
+                />
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Your e-mail"
+                  id="contact_email"
+                  class="input_field"
+                  required
+                />
+              </div>
+              <textarea
+                name="message"
+                rows="6"
+                id="contact_message"
+                class="input_field textarea_field"
+                placeholder="Your message"
+                required
+              >
+              </textarea>
+              <button class="primary_btn contact_us_btn" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+          <!-- Contact us image -->
+          <div>
+            <img
+              src="./assests/food-delivery.png"
+              alt="food-delivery"
+              class="contact_us_image"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer_contianer">
+        <div class="content footer_content_container">
+          <div class="logo_container">
+            <a href="/" id="logo_text">JTGeats</a>
+          </div>
+          <nav class="nav_container">
+            <div class="nav_list" id="footer_nav">
+              <a href="/" class="nav_link">Home</a>
+              <a href="/" class="nav_link">About</a>
+              <a href="/" class="nav_link">Menu</a>
+              <a href="/" class="nav_link">Blog</a>
+              <a href="/" class="nav_link">Contact</a>
+            </div>
+          </nav>
+          <div class="footer_social_links">
+            <a href="/" class="footer_icons_conatiner">
+              <i class="fa-brands fa-facebook-f footer_icons"></i>
+            </a>
+            <a href="/" class="footer_icons_conatiner">
+              <i class="fa-brands fa-instagram footer_icons"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Cart modal -->
+      <div class="modal_container_bg" id="cart_modal">
+        <div class="modal_container">
+          <div class="modal_heading_box">
+            <h2>Cart</h2>
+            <i class="fa-solid fa-xmark " id="close_cart_modal"></i>
+          </div>
+          <div class="modal_content" id="cart_food_container">
+            <!-- Insert data from js -->
+          </div>
+          <div class="primary_btn cart_modal_btn">Order Now</div>
+        </div>
+      </div>
+
+      <!-- Request dish modal -->
+      <div class="modal_container_bg" id="request_dish_modal">
+        <div class="modal_container request_dist_container">
+          <div class="modal_heading_box">
+            <h2>Request Dish</h2>
+            <div class="" id="close_request_dish_modal">
+              Cancel
+            </div>
+          </div>
+          <div class="modal_content" id="request_food_container">
+            <form action="">
+              <input type="text"
+              name="request-food-name"
+              id="request-food-name"
+              placeholder="Enter food name"
+              class="input_field"
+              required
+              />
+              <textarea type="text"
+              name="request-food-desc"
+              id="request-food-desc"
+              placeholder="Enter food description"
+              rows="6"
+              class="input_field textarea_field"
+              required
+              ></textarea>
+            </form>
+
+            <button class="primary_btn request_dish_submit_btn" type="submit" >Submit Request</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
